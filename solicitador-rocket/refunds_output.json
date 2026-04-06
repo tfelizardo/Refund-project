@@ -1,0 +1,207 @@
+﻿{
+    "refunds":  {
+                    "meta":  {
+                                 "total":  11,
+                                 "perPage":  10,
+                                 "currentPage":  1,
+                                 "lastPage":  2,
+                                 "firstPage":  1,
+                                 "firstPageUrl":  "/?page=1",
+                                 "lastPageUrl":  "/?page=2",
+                                 "nextPageUrl":  "/?page=2",
+                                 "previousPageUrl":  null
+                             },
+                    "data":  [
+                                 {
+                                     "id":  "95b67ab0-3708-4120-9995-9d241f3c8790",
+                                     "title":  "Thiago",
+                                     "category":  "food",
+                                     "value":  3000,
+                                     "deletedAt":  null,
+                                     "createdAt":  "2026-04-06T04:39:28.000+00:00",
+                                     "updatedAt":  "2026-04-06T04:39:28.000+00:00",
+                                     "receipt":  {
+                                                     "id":  "f85fd0d6-189c-4fc5-a250-465ab994d213",
+                                                     "originalFilename":  "git comando",
+                                                     "filename":  "git-comando-_rJU8BHeR2",
+                                                     "path":  "uploads/git-comando-_rJU8BHeR2.png",
+                                                     "extname":  "png",
+                                                     "refundId":  "95b67ab0-3708-4120-9995-9d241f3c8790",
+                                                     "createdAt":  "2026-04-06T04:39:27.000+00:00",
+                                                     "updatedAt":  "2026-04-06T04:39:28.000+00:00"
+                                                 }
+                                 },
+                                 {
+                                     "id":  "799f1071-c0c1-47ea-85e6-75e57b37f50e",
+                                     "title":  "Thiago",
+                                     "category":  "food",
+                                     "value":  3000,
+                                     "deletedAt":  null,
+                                     "createdAt":  "2026-04-06T04:43:12.000+00:00",
+                                     "updatedAt":  "2026-04-06T04:43:12.000+00:00",
+                                     "receipt":  {
+                                                     "id":  "8667d3be-48db-4e5a-ad09-d328fdc7df02",
+                                                     "originalFilename":  "CERTIFICADO MEI - THIAGO FELIZARDO",
+                                                     "filename":  "certificado-mei-thiago-felizardo-ZmuUP_YE1a",
+                                                     "path":  "uploads/certificado-mei-thiago-felizardo-ZmuUP_YE1a.pdf",
+                                                     "extname":  "pdf",
+                                                     "refundId":  "799f1071-c0c1-47ea-85e6-75e57b37f50e",
+                                                     "createdAt":  "2026-04-06T04:43:12.000+00:00",
+                                                     "updatedAt":  "2026-04-06T04:43:12.000+00:00"
+                                                 }
+                                 },
+                                 {
+                                     "id":  "72581c50-71c6-4eee-9536-a6bd18dc2b7f",
+                                     "title":  "Thiago",
+                                     "category":  "food",
+                                     "value":  3000,
+                                     "deletedAt":  null,
+                                     "createdAt":  "2026-04-06T04:48:23.000+00:00",
+                                     "updatedAt":  "2026-04-06T04:48:23.000+00:00",
+                                     "receipt":  {
+                                                     "id":  "93cb3bcd-6ffc-43bd-a110-697d757021fb",
+                                                     "originalFilename":  "git comando",
+                                                     "filename":  "git-comando-9gM52wero1",
+                                                     "path":  "uploads/git-comando-9gM52wero1.png",
+                                                     "extname":  "png",
+                                                     "refundId":  "72581c50-71c6-4eee-9536-a6bd18dc2b7f",
+                                                     "createdAt":  "2026-04-06T04:48:23.000+00:00",
+                                                     "updatedAt":  "2026-04-06T04:48:23.000+00:00"
+                                                 }
+                                 },
+                                 {
+                                     "id":  "33835dc5-6dec-410b-9ee5-10e9f4c2951a",
+                                     "title":  "Thiago",
+                                     "category":  "food",
+                                     "value":  3000,
+                                     "deletedAt":  null,
+                                     "createdAt":  "2026-04-06T04:53:18.000+00:00",
+                                     "updatedAt":  "2026-04-06T04:53:18.000+00:00",
+                                     "receipt":  {
+                                                     "id":  "f7c90f6c-a3bd-45e0-ace8-2a15ab4d0e8a",
+                                                     "originalFilename":  "git comando",
+                                                     "filename":  "git-comando-qQjw49q3zy",
+                                                     "path":  "uploads/git-comando-qQjw49q3zy.png",
+                                                     "extname":  "png",
+                                                     "refundId":  "33835dc5-6dec-410b-9ee5-10e9f4c2951a",
+                                                     "createdAt":  "2026-04-06T04:53:18.000+00:00",
+                                                     "updatedAt":  "2026-04-06T04:53:18.000+00:00"
+                                                 }
+                                 },
+                                 {
+                                     "id":  "bca6c99a-6fc9-4dca-90c3-37ec42f6df99",
+                                     "title":  "Thayse",
+                                     "category":  "food",
+                                     "value":  3000,
+                                     "deletedAt":  null,
+                                     "createdAt":  "2026-04-06T04:53:54.000+00:00",
+                                     "updatedAt":  "2026-04-06T04:53:54.000+00:00",
+                                     "receipt":  {
+                                                     "id":  "298708a2-8fb3-41e8-8463-178104ccf622",
+                                                     "originalFilename":  "git comando",
+                                                     "filename":  "git-comando-N68N-TwHpY",
+                                                     "path":  "uploads/git-comando-N68N-TwHpY.png",
+                                                     "extname":  "png",
+                                                     "refundId":  "bca6c99a-6fc9-4dca-90c3-37ec42f6df99",
+                                                     "createdAt":  "2026-04-06T04:53:54.000+00:00",
+                                                     "updatedAt":  "2026-04-06T04:53:54.000+00:00"
+                                                 }
+                                 },
+                                 {
+                                     "id":  "56c20aa7-d1c5-4de3-bb7d-b22658366a6c",
+                                     "title":  "Renata",
+                                     "category":  "hosting",
+                                     "value":  200000,
+                                     "deletedAt":  null,
+                                     "createdAt":  "2026-04-06T13:37:48.000+00:00",
+                                     "updatedAt":  "2026-04-06T13:37:48.000+00:00",
+                                     "receipt":  {
+                                                     "id":  "914d1c6e-6a20-43ae-ab3f-73edff940914",
+                                                     "originalFilename":  "git comando",
+                                                     "filename":  "git-comando-VBpMhtuoVA",
+                                                     "path":  "uploads/git-comando-VBpMhtuoVA.png",
+                                                     "extname":  "png",
+                                                     "refundId":  "56c20aa7-d1c5-4de3-bb7d-b22658366a6c",
+                                                     "createdAt":  "2026-04-06T13:37:48.000+00:00",
+                                                     "updatedAt":  "2026-04-06T13:37:48.000+00:00"
+                                                 }
+                                 },
+                                 {
+                                     "id":  "bc21309d-ab93-43f5-8ba2-127604d5d976",
+                                     "title":  "Gustavo",
+                                     "category":  "food",
+                                     "value":  22222,
+                                     "deletedAt":  null,
+                                     "createdAt":  "2026-04-06T14:35:01.000+00:00",
+                                     "updatedAt":  "2026-04-06T14:35:01.000+00:00",
+                                     "receipt":  {
+                                                     "id":  "f41996f4-5885-4cba-af2d-1ccdbc70ef14",
+                                                     "originalFilename":  "CERTIFICADO MEI - THIAGO FELIZARDO",
+                                                     "filename":  "certificado-mei-thiago-felizardo-NVdz0tansF",
+                                                     "path":  "uploads/certificado-mei-thiago-felizardo-NVdz0tansF.pdf",
+                                                     "extname":  "pdf",
+                                                     "refundId":  "bc21309d-ab93-43f5-8ba2-127604d5d976",
+                                                     "createdAt":  "2026-04-06T14:35:00.000+00:00",
+                                                     "updatedAt":  "2026-04-06T14:35:01.000+00:00"
+                                                 }
+                                 },
+                                 {
+                                     "id":  "a5f498af-7883-4114-8e71-a6a7919b23c9",
+                                     "title":  "jackson",
+                                     "category":  "transport",
+                                     "value":  50000,
+                                     "deletedAt":  null,
+                                     "createdAt":  "2026-04-06T14:35:52.000+00:00",
+                                     "updatedAt":  "2026-04-06T14:35:52.000+00:00",
+                                     "receipt":  {
+                                                     "id":  "0d19a0c7-a030-4c61-958e-e2c7fb181493",
+                                                     "originalFilename":  "CERTIFICADO MEI - THIAGO FELIZARDO",
+                                                     "filename":  "certificado-mei-thiago-felizardo-nF7Z1Wr5BL",
+                                                     "path":  "uploads/certificado-mei-thiago-felizardo-nF7Z1Wr5BL.pdf",
+                                                     "extname":  "pdf",
+                                                     "refundId":  "a5f498af-7883-4114-8e71-a6a7919b23c9",
+                                                     "createdAt":  "2026-04-06T14:35:52.000+00:00",
+                                                     "updatedAt":  "2026-04-06T14:35:52.000+00:00"
+                                                 }
+                                 },
+                                 {
+                                     "id":  "d0edc28e-836b-441f-9500-f6d69423e749",
+                                     "title":  "RENATINHA",
+                                     "category":  "hosting",
+                                     "value":  444444,
+                                     "deletedAt":  null,
+                                     "createdAt":  "2026-04-06T14:47:29.000+00:00",
+                                     "updatedAt":  "2026-04-06T14:47:29.000+00:00",
+                                     "receipt":  {
+                                                     "id":  "ac47fbe2-e3f7-421e-baba-9c345cd37e72",
+                                                     "originalFilename":  "CERTIFICADO MEI - THIAGO FELIZARDO",
+                                                     "filename":  "certificado-mei-thiago-felizardo-6zCZFm5pmx",
+                                                     "path":  "uploads/certificado-mei-thiago-felizardo-6zCZFm5pmx.pdf",
+                                                     "extname":  "pdf",
+                                                     "refundId":  "d0edc28e-836b-441f-9500-f6d69423e749",
+                                                     "createdAt":  "2026-04-06T14:47:28.000+00:00",
+                                                     "updatedAt":  "2026-04-06T14:47:29.000+00:00"
+                                                 }
+                                 },
+                                 {
+                                     "id":  "87e08aba-6347-4442-8bc2-baf920aa0e6b",
+                                     "title":  "LLLLLL",
+                                     "category":  "food",
+                                     "value":  3000,
+                                     "deletedAt":  null,
+                                     "createdAt":  "2026-04-06T15:07:46.000+00:00",
+                                     "updatedAt":  "2026-04-06T15:07:46.000+00:00",
+                                     "receipt":  {
+                                                     "id":  "75e75eb2-e829-4fce-9a14-0502f687c3b4",
+                                                     "originalFilename":  "git comando",
+                                                     "filename":  "git-comando-zEnY_t1hdn",
+                                                     "path":  "uploads/git-comando-zEnY_t1hdn.png",
+                                                     "extname":  "png",
+                                                     "refundId":  "87e08aba-6347-4442-8bc2-baf920aa0e6b",
+                                                     "createdAt":  "2026-04-06T15:07:46.000+00:00",
+                                                     "updatedAt":  "2026-04-06T15:07:46.000+00:00"
+                                                 }
+                                 }
+                             ]
+                }
+}

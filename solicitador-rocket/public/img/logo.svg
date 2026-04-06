@@ -1,0 +1,10 @@
+<svg width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&amp;display=swap");
+    </style>
+  </defs>
+  <path d="M28 28 H 14 A 8 8 0 0 1 14 12 H 28" stroke="#1F8459" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M22 6 L 30 12 L 22 18" stroke="#1F8459" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="42" y="27" fill="#1F8459" font-family="'Poppins', sans-serif" font-weight="700" font-size="24" letter-spacing="-0.02em">refund</text>
+</svg>

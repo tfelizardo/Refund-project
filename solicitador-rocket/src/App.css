@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e4ece9;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e4ece9;
+    color: #1f2523;
+}
+
+/* Header */
+.app-header {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 2rem;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-link {
+    background: transparent;
+    border: none;
+    color: #1F8459;
+    font-weight: 600;
+    font-size: 0.87rem;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 0.87rem;
+    color: #ffffff;
+    background-color: #1f8459;
+    font-weight: 700;
+    padding: 0 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover, .submit-btn:hover {
+    background-color: #2cb178;
+}
+
+/* Main Layout */
+.main-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Cards */
+.card {
+    background-color: #f9fbfa;
+    border-radius: 1rem;
+    padding: 2.5rem;
+}
+
+.new-request-card {
+    max-width: 480px;
+    width: 100%;
+}
+
+.requests-card {
+    max-width: 900px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h1 {
+    font-size: 1.25rem;
+}
+
+form p {
+    font-size: 0.87rem;
+    color: #4d5c57;
+    margin: 0.75rem 0 2.5rem;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+fieldset legend {
+    text-transform: uppercase;
+    font-size: 0.62rem;
+    color: #4d5c57;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+fieldset:focus-within legend {
+    color: #1f8459;
+}
+
+input[type="text"],
+select,
+.file-input-label {
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 1px solid #cdd5d2;
+    padding: 0 1rem;
+    font-size: 0.87rem;
+    color: #1f2523;
+    background-color: transparent;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-with-icon input {
+    padding-right: 2.5rem;
+}
+
+.input-with-icon svg {
+    position: absolute;
+    right: 1rem;
+}
+
+select {
+    appearance: none;
+    background-image: url(/img/chevron-down.svg);
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 1.25rem auto;
+}
+
+input::placeholder,
+select:invalid {
+    color: #a0a8a6;
+}
+
+option {
+    color: #1f2523;
+    background-color: #fff;
+}
+
+input:focus,
+select:focus,
+.file-input-wrapper:focus-within .file-input-label {
+    border: 1.5px solid #1f8459;
+}
+
+.inputs-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.inputs-row fieldset {
+    flex: 1;
+}
+
+/* File Input Specific */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.file-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.file-input-label {
+    justify-content: space-between;
+    padding-right: 0.25rem;
+    cursor: pointer;
+}
+
+.file-input-label .placeholder {
+    color: #a0a8a6;
+}
+
+.upload-button {
+    background-color: #1f8459;
+    border-radius: 0.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-outline {
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 1px solid #1f8459;
+    font-size: 0.87rem;
+    color: #1f8459;
+    background-color: transparent;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.btn-outline:hover {
+    background-color: rgba(31, 132, 89, 0.05);
+}
+
+.submit-btn {
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 0.87rem;
+    color: #ffffff;
+    background-color: #1f8459;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.2s;
+}
+
+/* Requests List Specific */
+.requests-card h1 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.search-bar input {
+    padding-right: 3.5rem;
+}
+
+.search-btn {
+    position: absolute;
+    right: 0.35rem;
+    background-color: #1f8459;
+    border: none;
+    border-radius: 0.35rem;
+    width: 2.5rem;
+    height: 2.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.requests-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.request-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e4ece9;
+}
+
+.request-item:last-child {
+    border-bottom: none;
+}
+
+.icon-wrapper {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #e4ece9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.request-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.request-info strong {
+    font-size: 0.87rem;
+    color: #1f2523;
+}
+
+.request-info span {
+    font-size: 0.75rem;
+    color: #4d5c57;
+}
+
+.request-amount {
+    font-size: 0.87rem;
+    color: #1f2523;
+    font-weight: 700;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.page-btn {
+    background-color: #8cbfa6;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+.page-btn.disabled {
+    background-color: #caddd4;
+    cursor: not-allowed;
+}
+
+.page-info {
+    font-size: 0.87rem;
+    color: #4d5c57;
+}
