@@ -1,0 +1,15 @@
+[ info ] cleaning up output directory (build)
+[ info ] compiling typescript source (tsc)
+[ info ] rewrited ace file (build/ace.js)
+[ info ] copying meta files to the output directory
+[ success ] build completed
+
+╭────────────────────────────────────────────────────────────────────────╮
+│    Run the following commands to start the server in production        │
+│────────────────────────────────────────────────────────────────────────│
+│                                                                        │
+│    ❯ cd build                                                          │
+│    ❯ npm ci --omit="dev"                                               │
+│    ❯ node bin/server.js                                                │
+│                                                                        │
+╰────────────────────────────────────────────────────────────────────────╯
