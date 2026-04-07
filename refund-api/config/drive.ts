@@ -7,6 +7,10 @@ const storagePath = app.makePath('storage')
 if (!fs.existsSync(storagePath)) {
   fs.mkdirSync(storagePath, { recursive: true })
 }
+const uploadsPath = app.makePath('storage/uploads')
+if (!fs.existsSync(uploadsPath)) {
+  fs.mkdirSync(uploadsPath, { recursive: true })
+}
 
 const driveConfig = defineConfig({
   default: env.get('DRIVE_DISK'),
