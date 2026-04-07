@@ -1,75 +1,173 @@
-# React + TypeScript + Vite
+# 💸 Refund Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um sistema de solicitação de reembolsos desenvolvido com React, TypeScript e AdonisJS para gerenciar despesas de forma simples, rápida e organizada.
 
-Currently, two official plugins are available:
+👉 https://refund-project-xi.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🎯 Sobre o Projeto
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+O **Refund Project** é uma aplicação web fullstack onde o usuário pode cadastrar solicitações de reembolso, informando dados da despesa e anexando comprovantes.
 
-Note: This will impact Vite dev & build performances.
+O sistema permite visualizar e organizar os reembolsos enviados, simulando um fluxo real utilizado em empresas.
 
-## Expanding the ESLint configuration
+O projeto foi desenvolvido para praticar integração entre frontend e backend, consumo de API, manipulação de formulários e upload de arquivos.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Funcionalidades
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+📄 **Criação de reembolsos**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* Cadastro do nome da solicitação
+* Seleção de categoria
+* Inserção de valor
+* Upload de comprovante (imagem)
+* Envio dos dados para a API
+
+📊 **Listagem de reembolsos**
+
+* Exibição automática dos dados cadastrados
+* Atualização em tempo real
+
+🏷️ **Categorias de despesas**
+
+* Alimentação
+* Hospedagem
+* Transporte
+* Outros
+
+📎 **Upload de arquivos**
+
+* Envio de imagens como comprovante
+* Integração com backend
+
+🚀 **Integração completa**
+
+* Comunicação entre frontend e API
+* Requisições HTTP com Axios
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+### Frontend
+
+* ⚛️ React
+* 📘 TypeScript
+* ⚡ Vite
+* 🎨 CSS
+
+### Backend
+
+* 🟢 Node.js
+* 🧩 AdonisJS
+* 🗄️ SQLite (desenvolvimento)
+* 📦 Render
+
+### Deploy
+
+* ☁️ Vercel (Frontend)
+
+---
+
+## 📁 Estrutura do Projeto
+
+```bash
+Refund-project/
+├── refund-api/          # Backend (AdonisJS)
+│   ├── app/
+│   ├── config/
+│   ├── database/
+│   ├── start/
+│   └── ...
+│
+├── solicitador-rocket/  # Frontend (React)
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── api/
+│   │   ├── hooks/
+│   │   └── ...
+│
+├── package.json
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🎯 Como Funciona
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Preencha o formulário com:
+
+   * Nome da solicitação
+   * Categoria
+   * Valor
+
+2. Faça upload do comprovante
+
+3. Clique em **Enviar**
+
+4. O reembolso será salvo e exibido automaticamente na lista
+
+---
+
+## 🧠 Conceitos Aplicados
+
+* Integração frontend + backend
+* Consumo de API REST
+* Upload de arquivos
+* Gerenciamento de estado no React
+* Componentização
+* Tipagem com TypeScript
+* Manipulação de arrays:
+  * map
+  * filter
+* Comunicação entre componentes via props
+
+---
+
+## 🏗️ Arquitetura
+
+O projeto é dividido em duas partes:
+
+### 🔹 Frontend
+
+Responsável pela interface e interação com o usuário:
+
+* Formulário de envio
+* Listagem de reembolsos
+* Comunicação com a API
+
+### 🔹 Backend
+
+Responsável pelo processamento dos dados:
+
+* Criação de reembolsos
+* Upload de arquivos
+* Persistência no banco de dados
+* Exposição de endpoints REST
+
+---
+
+## 💻 Instalação e Execução
+
+git clone https://github.com/tfelizardo/Refund-project
+
+### 💻 Frontend
+
+```bash
+cd solicitador-rocket
+npm install
+npm run dev
 ```
+
+---
+
+## 🌐 Projeto Online
+
+👉 https://refund-project-xi.vercel.app/
+
+---
+
