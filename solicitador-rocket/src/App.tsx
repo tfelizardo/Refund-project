@@ -16,16 +16,16 @@ function App() {
     <>
       <header className="app-header">
         <img src={logo} alt="Convert logo" className="logo" />
-        
+
         <nav className="nav-actions">
-          <button 
+          <button
             className={`nav-link ${activeTab === 'list' && !selectedRefund ? 'active' : ''}`}
             onClick={() => { setActiveTab('list'); setSelectedRefund(null); }}
           >
             Solicitações de reembolso
           </button>
-          
-          <button 
+
+          <button
             className={`btn-primary ${activeTab === 'new' && !selectedRefund ? 'active' : ''}`}
             onClick={() => { setActiveTab('new'); setSelectedRefund(null); }}
           >
@@ -93,8 +93,9 @@ function App() {
                       console.log("RECEIPT FINAL QUE VAI PRA URL:", filename);
                       console.log("OBJETO ORIGINAL:", selectedRefund.receipt);
 
+                      const baseUrl = import.meta.env.VITE_API_URL || "http://localhost:3333";
                       window.open(
-                        `http://localhost:3333/receipts/file/${filename}`,
+                        `${baseUrl}/receipts/file/${filename}`,
                         "_blank"
                       );
                     }}
@@ -109,9 +110,9 @@ function App() {
                     Abrir comprovante
                   </button>
 
-                  <button 
-                    type="button" 
-                    className="submit-btn" 
+                  <button
+                    type="button"
+                    className="submit-btn"
                     onClick={() => setDeleteModalOpen(true)}
                     style={{ margin: 0 }}
                   >
@@ -129,14 +130,14 @@ function App() {
                 <div className="card" style={{ padding: '2rem', textAlign: 'center', maxWidth: '400px', width: '90%' }}>
                   <h2 style={{ fontSize: '1.25rem', marginBottom: '1.5rem', color: '#1f2523' }}>Deseja realmente excluir este comprovante ?</h2>
                   <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-                    <button 
-                      className="submit-btn" 
-                      style={{ margin: 0, flex: 1 }} 
+                    <button
+                      className="submit-btn"
+                      style={{ margin: 0, flex: 1 }}
                       onClick={async () => {
                         try {
                           await deleteRefund(selectedRefund.id);
                           queryClient.invalidateQueries({ queryKey: ["refunds"] });
-                        } catch(e) {
+                        } catch (e) {
                           console.log("Falha ao excluir reembolso (a rota delete pode não existir):", e);
                         }
                         setDeleteModalOpen(false);
@@ -145,9 +146,9 @@ function App() {
                     >
                       SIM
                     </button>
-                    <button 
-                      className="btn-outline" 
-                      style={{ margin: 0, flex: 1 }} 
+                    <button
+                      className="btn-outline"
+                      style={{ margin: 0, flex: 1 }}
                       onClick={() => setDeleteModalOpen(false)}
                     >
                       NAO
