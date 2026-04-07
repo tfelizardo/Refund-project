@@ -1,5 +1,11 @@
 import app from '@adonisjs/core/services/app'
 import { defineConfig } from '@adonisjs/lucid'
+import fs from 'node:fs'
+
+const tmpDir = app.makePath('tmp')
+if (!fs.existsSync(tmpDir)) {
+  fs.mkdirSync(tmpDir, { recursive: true })
+}
 
 const dbConfig = defineConfig({
   connection: 'sqlite',
