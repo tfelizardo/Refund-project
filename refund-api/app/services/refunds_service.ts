@@ -6,7 +6,6 @@ import {
   ShowRefundValidator,
   SoftDeleteRefundValidator,
 } from '#validators/refund_validator'
-import drive from '@adonisjs/drive/services/main'
 import { DateTime } from 'luxon'
 
 export class RefundService {
@@ -32,17 +31,7 @@ export class RefundService {
 
     const receipt = await Receipt.findOrFail(payload.receipt)
 
-    const localDrive = drive.use('fs')
-    const source = receipt.path
-    const destination = `uploads/${receipt.filename}.${receipt.extname}`
-
-    receipt.path = destination
-
-    await Promise.all([
-      localDrive.moveFromFs(source, destination),
-      refund.related('receipt').save(receipt),
-      receipt.save(),
-    ])
+    await refund.related('receipt').save(receipt)
     await refund.load('receipt')
 
     return { refund }

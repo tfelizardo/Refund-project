@@ -7,11 +7,14 @@ import {
 import drive from '@adonisjs/drive/services/main'
 import app from '@adonisjs/core/services/app'
 
+import { randomUUID } from 'node:crypto'
+
 export class ReceiptService {
   async create(payload: CreateReceiptValidator) {
     const receipt = new Receipt()
 
-    const fileName = `${new Date().getTime()}-${payload.receiptFile.clientName.replace(/\s+/g, '_')}`
+    const ext = payload.receiptFile.extname || 'bin'
+    const fileName = `${randomUUID()}.${ext}`
 
     // Actually move the file to the 'storage/uploads' folder
     await payload.receiptFile.move(app.makePath('storage/uploads'), {
@@ -22,7 +25,7 @@ export class ReceiptService {
       `.${payload.receiptFile.extname}`
     )[0]
     receipt.path = `storage/uploads/${fileName}`
-    receipt.extname = payload.receiptFile.extname!
+    receipt.extname = ext
     receipt.filename = fileName
 
     await receipt.save()
