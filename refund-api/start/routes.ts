@@ -21,8 +21,10 @@ router.resource('refunds', RefundsController).only(['index', 'store', 'show', 'd
 router.resource('receipts', ReceiptsController).only(['store', 'show', 'destroy'])
 router.get('receipts/download/:id', [ReceiptDownloadsController])
 
+import app from '@adonisjs/core/services/app'
+
 router.get('/receipts/file/:filename', async ({ params, response }) => {
-  const filePath = `storage/uploads/${params.filename}`
+  const filePath = app.makePath('storage/uploads', params.filename)
   return response.download(filePath)
 })
 
